@@ -1,0 +1,74 @@
+/*
+* Contents
+*
+*Layout
+*Elements.............Rules for the container and items
+*Modifiers............Media queries for the layout
+*
+*Whitespaces..........Whitespaces between items
+*/
+
+
+
+
+
+/*=============================
+  #ELEMENTS
+  ============================= */
+
+.nav {
+  grid-area:  nav;
+  align-self: center stretch;
+}
+
+
+.header {
+  grid-area:  header;
+  align-self: center stretch;
+}
+
+
+.ask {
+  grid-area:  ask;
+}
+
+
+.main {
+  grid-area:  main;
+}
+
+
+.send {
+  grid-area:  send;
+}
+
+
+.footer {
+  grid-area:  footer;
+  align-self: center stretch;
+}
+
+.page {
+  display: grid;
+  grid-template-areas: 
+    "nav"
+    "header"
+    "ask"
+    "main"
+    "send"
+    "footer"
+}
+
+
+
+
+
+/*============================
+  MODIFIERS
+  ============================ */
+
+@media (min-width: 600px) {
+  .nav__btn {
+    display: inline-block;
+  }
+}

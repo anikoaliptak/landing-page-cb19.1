@@ -1,10 +1,19 @@
+:root {
+  --primary-color:       #d9a8a1;
+  --secondary-color:     #d9ada6;
+  --font-color:          #5c8a8a;
+}
 
+/* ==========================
+   GENERAL STYLES
+   ========================== */
 * {
   box-sizing: border-box;
 }
 
 body {
-  color: #5c8a8a;
+  background: url(../pic/handmade-paper-background.png) repeat center/cover;
+  color:                var(--font-color);
   font-family: 'Merriweather', sans-serif;  
 }
 
