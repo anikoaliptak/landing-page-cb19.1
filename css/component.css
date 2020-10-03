@@ -1,0 +1,70 @@
+/*
+*Contents
+*Top nav styles
+*Header styles
+*
+*
+*
+*
+*/
+
+
+/* =========================
+   TOP NAV STYLES
+   ========================= */
+
+.nav {
+  background-color:     var(--primary-color);
+  text-align:           center;
+}
+
+
+.nav__btn {
+  font-family:          'Lora', serif;
+  font-size:            1rem;
+  line-height:          3rem;
+  height:               3rem;
+  border-bottom:        .7px dashed var(--btn-text-color);
+}
+
+
+.nav__btn-text {
+  text-decoration:      none;
+  text-shadow:          1px 1px 1px var(--font-color);
+  color:                var(--btn-text-color);
+  padding:              0 3rem;
+  letter-spacing:       .7px;
+}
+
+
+.nav__btn:hover {
+  background-color:     rgba(255,255,255,.2);
+  transition:           background-color .3s easi-in-out;
+}
+
+
+
+
+/*==========================
+  HEADER STYLES
+  ========================== */
+
+.header {
+  background:           url(../pic/landing-page-pic.jpg) no-repeat center / cover;
+  height:               75vh;
+  display:              flex;
+  justify-content:      center;
+  align-items:          center;
+  text-align:           center;
+}
+
+
+.header__text {
+  background-color:     var(--primary-color);
+  font-size:            1.25rem;
+  text-shadow:          1px 1px 1px var(--font-color);
+  border-radius:        3%;
+  padding:              3rem;
+  color:                var(--btn-text-color);
+}
+

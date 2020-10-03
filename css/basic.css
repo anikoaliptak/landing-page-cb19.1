@@ -1,7 +1,30 @@
+/*
+*Overview
+*
+*This project is separeted to the following style sheets:
+*
+*Basic.css.............The global CSS rules.
+*Layout.css............The CSS rules of the layout and the different screen.
+*Component.css.........The CSS rules for the components that build up the page.
+*/
+
+
+/*
+*Content
+*
+*Variables............Globally available variable.
+*General styles.......General styles for the whole page.
+*
+
+/* ==========================
+   VARIABLES
+   ========================== */
+
 :root {
-  --primary-color:       #d9a8a1;
+  --primary-color:       rgba(217,168,161,.8);
   --secondary-color:     #d9ada6;
   --font-color:          #5c8a8a;
+  --btn-text-color:      rgba(255,255,255,.8);
 }
 
 /* ==========================
@@ -12,10 +35,14 @@
 }
 
 body {
-  background: url(../pic/handmade-paper-background.png) repeat center/cover;
+  background:           url(../pic/handmade-paper-background.png) repeat center/cover;
   color:                var(--font-color);
-  font-family: 'Merriweather', sans-serif;  
+  font-family:          'Merriweather', sans-serif;  
 }
+
+
+
+
 
 
 

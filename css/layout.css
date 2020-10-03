@@ -24,7 +24,6 @@
 
 .header {
   grid-area:  header;
-  align-self: center stretch;
 }
 
 
@@ -69,6 +68,7 @@
 
 @media (min-width: 600px) {
   .nav__btn {
-    display: inline-block;
+    display:               inline-block;
+    border-bottom:         none;
   }
 }
