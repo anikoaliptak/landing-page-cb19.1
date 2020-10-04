@@ -14,7 +14,7 @@
 *
 *Variables............Globally available variable.
 *General styles.......General styles for the whole page.
-*
+*  / 1,...............for responsive operation of the images. /
 
 /* ==========================
    VARIABLES
@@ -41,6 +41,9 @@ body {
 }
 
 
+img {
+  max-width:            100%; /* 1 */
+}                             
 
 
 

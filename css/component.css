@@ -1,9 +1,9 @@
 /*
 *Contents
-*Top nav styles
-*Header styles
-*
-*
+*Top nav style
+*Header style
+*"Ask" section style
+*Main style
 *
 *
 */
@@ -25,6 +25,13 @@
   line-height:          3rem;
   height:               3rem;
   border-bottom:        .7px dashed var(--btn-text-color);
+}
+
+
+@media (min-width: 600px) {
+  .nav__btn {
+    border-bottom:      none;
+  }
 }
 
 
@@ -68,3 +75,92 @@
   color:                var(--btn-text-color);
 }
 
+
+
+
+/*=========================
+  "ASK" SECTION STYLE
+  ========================= */
+
+
+.ask {
+  display:              flex;
+  flex-direction:       column;
+  align-items:          flex-start;
+  padding:              3rem;
+}
+
+
+.ask__why {
+  line-height:          1.5rem;
+  font-size:            1.25rem;
+}
+
+
+.ask__button {
+  text-decoration:      none;
+  font-size:            1.5rem;
+  padding:              1rem;
+  margin-top:           1rem;
+  background-color:     var(--primary-color);
+  border:               .7px dashed var(--btn-text-color);
+  color:                var(--btn-text-color);
+}
+
+
+.ask__button:hover {
+  color:                var(--font-color);
+  transition:           color .3s easi-in-out;
+}
+
+
+
+
+/*==========================
+  MAIN STYLE
+  ========================== */
+
+.main {
+  display:               flex;
+  flex-direction:        column;
+  align-items:           center;
+}
+
+.main__box {
+  width:                 100vw;
+  padding:               3rem;
+}
+
+
+@media (min-width: 600px) {
+  .main {
+    flex-direction:      row;
+  }
+  .main__box {
+    width:               50vw;
+  }
+}
+
+
+h2 {
+  font-family:           'Lora', serif;
+  font-size:             1.25rem;
+  text-shadow:           .8px .8px .8px var(--font-color);
+  color:                 var(--secondary-color);
+  padding:               1rem 0;
+}
+
+
+.main__box-text {
+  font-size:             .8rem;
+  margin-bottom:         2rem;
+}
+
+
+.main__box-btn {
+  text-decoration:       none;
+  padding:               .5rem;
+  background-color:      var(--primary-color);
+  border:                .7px dashed var(--btn-text-color);
+  color:                 var(--btn-text-color);
+}
