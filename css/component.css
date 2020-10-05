@@ -86,22 +86,33 @@
 .ask {
   display:              flex;
   flex-direction:       column;
-  align-items:          flex-start;
+  align-items:          center;
   padding:              3rem;
 }
 
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom:        3rem;
+}
+
+
+.wrapper__icon{
+  padding: 0 3rem;
+}
+
 .ask__why {
   line-height:          1.5rem;
-  font-size:            1.25rem;
+  font-size:            1rem;
 }
 
 
 .ask__button {
   text-decoration:      none;
-  font-size:            1.5rem;
-  padding:              1rem;
-  margin-top:           1rem;
+  font-size:            1.25rem;
+  padding:              .75rem;
+  margin-top:           2rem;
   background-color:     var(--primary-color);
   border:               .7px dashed var(--btn-text-color);
   color:                var(--btn-text-color);
@@ -122,19 +133,19 @@
 
 .main {
   display:               flex;
-  flex-direction:        column;
+  flex-direction:        column-reverse;
   align-items:           center;
 }
 
 .main__box {
   width:                 100vw;
-  padding:               3rem;
+  padding:               2rem;
 }
 
 
 @media (min-width: 600px) {
   .main {
-    flex-direction:      row;
+    flex-direction:      row-reverse;
   }
   .main__box {
     width:               50vw;
@@ -163,4 +174,86 @@ h2 {
   background-color:      var(--primary-color);
   border:                .7px dashed var(--btn-text-color);
   color:                 var(--btn-text-color);
+}
+
+
+.main__box-btn:hover {
+   color:                var(--font-color);
+  transition:            color .3s easi-in-out;
+}
+
+
+
+
+/* =========================
+   SEND SECTION
+   ========================= */
+
+.send {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+
+imput, label {
+  font-size: 16px;
+}
+
+
+input {
+  width: 200px;
+  height: 30px;
+  margin: 25px 0;
+  border: .7px dashed var(--btn-text-color);
+}
+
+
+label {
+  display: inline-block;
+  position: relative;
+  left: -200px;
+  cursor: text;
+  transform-origin: left bottom;
+  transition-duration: .5s;
+}
+
+
+input:focus {
+  outline: 0;
+}
+
+
+input:focus + label, input:valid+label {
+  transform: translate(0, -25px) scale(0.8);
+}
+
+
+.footer {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.footer__item {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.footer__item-link {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: .7rem;
+  color: var(--btn-text-color);
+  padding: 0 15px;
+}
+
+
+@media (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+  }
 }
