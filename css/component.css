@@ -4,8 +4,8 @@
 *Header style
 *"Ask" section style
 *Main style
-*
-*
+*"Send section style
+*Footer style
 */
 
 
@@ -195,6 +195,10 @@ h2 {
   padding: 2rem;
 }
 
+.send__text {
+  line-height: 1.3rem;
+}
+
 
 imput, label {
   font-size: 16px;
@@ -204,7 +208,7 @@ imput, label {
 input {
   width: 200px;
   height: 30px;
-  margin: 25px 0;
+  margin: 25px 0 0 0;
   border: .7px dashed var(--btn-text-color);
 }
 
@@ -227,6 +231,28 @@ input:focus {
 input:focus + label, input:valid+label {
   transform: translate(0, -25px) scale(0.8);
 }
+
+.send__btn {
+  text-decoration:       none;
+  text-align:            center;
+  max-width:             120px;
+  margin-top:            25px;
+  padding:               .5rem;
+  background-color:      var(--primary-color);
+  border:                .7px dashed var(--btn-text-color);
+  color:                 var(--btn-text-color);
+}
+
+
+.send__btn:hover {
+  color:                var(--font-color);
+  transition:           color .3s easi-in-out;
+}
+
+
+/* ==========================
+   FOOTER STYLE
+   ========================== */
 
 
 .footer {
