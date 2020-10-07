@@ -1,11 +1,37 @@
 /*
 *Contents
+*
 *Top nav style
+==============
+  - 1, the border-bottom will be disapperars, when the buttons are next each
+other
+  - 2, the color of buttons will be change, when you draw there the cursor
+
 *Header style
+=============
+  - 3, the Header is a flex-box container, in this way to place center the text
+easier
+
 *"Ask" section style
+====================
+  - 4, on this button the color of text change, when you draw there the cursor,
+this is true the buttons of in the main box and send section too
+
 *Main style
-*"Send section style
+===========
+  - 5, the place of boxes compared to html are reverse in the main container
+  - 6, the boxes will be next each other over 600px width
+
+*"Send" section style
+=====================
+  - 7, the text of label is in the input field until the user clicks on  it
+  - 8, the text in the input field moves away and becomes smaller when it is
+in focus
+
 *Footer style
+=============
+  - 9, the elements in the footer componenet are wrapped with two, it's way
+they are this way under each other on a screen smaller than 600px
 */
 
 
@@ -30,7 +56,7 @@
 
 @media (min-width: 600px) {
   .nav__btn {
-    border-bottom:      none;
+    border-bottom:      none; /* 1, */
   }
 }
 
@@ -46,7 +72,7 @@
 
 .nav__btn:hover {
   background-color:     rgba(255,255,255,.2);
-  transition:           background-color .3s easi-in-out;
+  transition:           background-color .3s easi-in-out; /* 2, */
 }
 
 
@@ -57,9 +83,10 @@
   ========================== */
 
 .header {
-  background:           url(../pic/landing-page-pic.jpg) no-repeat center / cover;
+  background:           url(../pic/landing-page-pic.jpg) no-repeat
+    center / cover;
   height:               75vh;
-  display:              flex;
+  display:              flex;  /* 3, */
   justify-content:      center;
   align-items:          center;
   text-align:           center;
@@ -121,7 +148,7 @@
 
 .ask__button:hover {
   color:                var(--font-color);
-  transition:           color .3s easi-in-out;
+  transition:           color .3s easi-in-out; /* 4, */
 }
 
 
@@ -133,7 +160,7 @@
 
 .main {
   display:               flex;
-  flex-direction:        column-reverse;
+  flex-direction:        column-reverse; /* 5, */
   align-items:           center;
 }
 
@@ -145,7 +172,7 @@
 
 @media (min-width: 600px) {
   .main {
-    flex-direction:      row-reverse;
+    flex-direction:      row-reverse; /* 6, */
   }
   .main__box {
     width:               50vw;
@@ -179,7 +206,7 @@ h2 {
 
 .main__box-btn:hover {
    color:                var(--font-color);
-  transition:            color .3s easi-in-out;
+  transition:            color .3s easi-in-out; /* 4, */
 }
 
 
@@ -190,50 +217,49 @@ h2 {
    ========================= */
 
 .send {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
+  display:               flex;
+  flex-direction:        column;
+  padding:               2rem;
 }
 
 .send__text {
-  line-height: 1.3rem;
+  line-height:           1.3rem;
 }
 
 
 imput, label {
-  font-size: 16px;
+  font-size:             16px;
 }
 
 
 input {
-  width: 200px;
-  height: 30px;
-  margin: 25px 0 0 0;
-  border: .7px dashed var(--btn-text-color);
+  width:                 200px;
+  height:                30px;
+  margin:                25px 0 0 0;
+  border:                .7px dashed var(--btn-text-color);
 }
 
 
 label {
-  display: inline-block;
-  position: relative;
-  left: -200px;
-  cursor: text;
-  transform-origin: left bottom;
-  transition-duration: .5s;
+  display:               inline-block;
+  position:              relative;
+  left:                  -200px; /* 7, */
+  cursor:                text;
+  transform-origin:      left bottom;
+  transition-duration:   .5s;
 }
 
 
 input:focus {
-  outline: 0;
+  outline:               0;
 }
 
 
 input:focus + label, input:valid+label {
-  transform: translate(0, -25px) scale(0.8);
+  transform:             translate(0, -25px) scale(0.8); /* 8, */
 }
 
 .send__btn {
-  text-decoration:       none;
   text-align:            center;
   max-width:             120px;
   margin-top:            25px;
@@ -245,8 +271,8 @@ input:focus + label, input:valid+label {
 
 
 .send__btn:hover {
-  color:                var(--font-color);
-  transition:           color .3s easi-in-out;
+  color:                 var(--font-color);
+  transition:            color .3s easi-in-out; /* 4, */
 }
 
 
@@ -256,30 +282,30 @@ input:focus + label, input:valid+label {
 
 
 .footer {
-  background-color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color:      var(--primary-color);
+  display:               flex;
+  flex-direction:        column;
+  justify-content:       center;
 }
 
 
 .footer__item {
-  padding: 10px;
-  text-align: center;
+  padding:               10px;
+  text-align:            center;
 }
 
 
 .footer__item-link {
-  text-decoration: none;
-  font-family: 'Lora', serif;
-  font-size: .7rem;
-  color: var(--btn-text-color);
-  padding: 0 15px;
+  text-decoration:       none;
+  font-family:           'Lora', serif;
+  font-size:             .7rem;
+  color:                 var(--btn-text-color);
+  padding:               0 15px;
 }
 
 
 @media (min-width: 600px) {
   .footer {
-    flex-direction: row;
+    flex-direction:      row; /* 9, */
   }
 }

@@ -2,7 +2,9 @@
 * Contents
 *
 *Layout
-*Elements.............Rules for the container and items
+*  - I used the CSS grid to layout for the components of page
+*
+*Components.............Rules for the container and items
 *Modifiers............Media queries for the layout
 *
 */
@@ -12,7 +14,7 @@
 
 
 /*=============================
-  #ELEMENTS
+  COMPONENTS
   ============================= */
 
 .nav {
