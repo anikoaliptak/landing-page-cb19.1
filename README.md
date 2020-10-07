@@ -1,5 +1,6 @@
 # landing-page-cb19.1
 ===================================================================================
+
 GENERAL INFORMATION
 
 This page is a possible version, for example, for consultants who do with network
@@ -9,6 +10,7 @@ It can connect to the web shop, the blog page, the join form and the user can as
 to call back.
 
 ====================================================================================
+
 DEVELOPMENT INFORMATION
 
 The CSS reset is in the head part of html.
